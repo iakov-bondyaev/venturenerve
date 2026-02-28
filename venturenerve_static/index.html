@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VentureNerve</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>VentureNerve</h1>
+    <p class="subtitle">Match startups to investors by Risk-Adjusted Return</p>
+
+    <div class="controls">
+      <label>Minimum IRR (%) <span id="irrVal">25</span></label>
+      <input type="range" id="irr" min="5" max="60" value="25" />
+
+      <label>Maximum PD (%) <span id="pdVal">35</span></label>
+      <input type="range" id="pd" min="5" max="80" value="35" />
+    </div>
+
+    <button onclick="runMatch()">Run Matching</button>
+
+    <h2>Top 3 Matches</h2>
+    <div id="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
